@@ -81,7 +81,7 @@ def parse_file(filename):
 if __name__ == '__main__':
     import pprint
     pp = pprint.PrettyPrinter(indent=4)
-    data = parse_file('./inputs/test.in')
+    data = parse_file('./inputs/first_adventure.in')
     pp.pprint(data)
 
     ps = data['projects']
