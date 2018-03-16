@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(50000)
+
+
 def test_allocation(allocations):
 
     # TODO: 

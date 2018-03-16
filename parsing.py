@@ -40,7 +40,6 @@ def parse_service(lines):
 
 def parse_project(line):
     parse = line.split()
-    print(parse)
     project = {
         'penalty': int(parse[0]),
         'country': parse[1],
@@ -68,8 +67,9 @@ def parse_file(filename):
     data["contries"] = lines[2].split()
 
     lines = lines[3:]
+
     services = {}
-    for _ in range(n_services):
+    for num in range(n_providers):
         provider, lines = parse_service(lines)
         data["providers"].append(provider)
 
